@@ -1,0 +1,23 @@
+.navigation
+  .container
+    %a#toggle-menu.hidden
+      %div
+        %span.top
+        %span.middle
+        %span.bottom
+      %div
+        Menu
+  %nav.nav-menu
+    %li
+      = link_to 'Home', '/'
+    %li
+      = link_to 'À la carte Klassiker', '/alacarte.html'
+    %li
+      = link_to 'Unsere Menüs', 'mailto:hiasinho@me.com'
+    %li
+      = link_to 'Reservieren', 'mailto:hiasinho@me.com'
+  %nav.nav-menu-sub
+    %li
+      = link_to 'Impressum', '/impressum.html'
+    %li
+      = link_to 'Datenschutz', '/datenschutz.html'

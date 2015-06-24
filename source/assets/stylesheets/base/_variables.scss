@@ -1,9 +1,9 @@
 // Typography
-$base-font-family: 'Open Sans', $helvetica;
-$heading-font-family: 'Montserrat', $helvetica;
+$base-font-family: 'Source Sans Pro', $helvetica;
+$heading-font-family: 'GazTruck-Regular', 'Montserrat', $helvetica;
 
 // Font Sizes
-$base-font-size: em(16);
+$base-font-size: em(14);
 
 // Line height
 $base-line-height: 1.6;
@@ -14,15 +14,17 @@ $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
+$section-min-height: 380px;
+$base-padding: 50px;
 
 // Colors
 $dark-grey: #333;
 $medium-grey: #999;
 $light-grey: #ddd;
-$primary-color: #33c3f0 !default;
-$secondary-color: lighten($dark-grey, 13.5%) !default;
+$primary-color: #000000 !default;
+$secondary-color: #ffffff !default;
 $border-color: #bbb !default;
-$link-color: #1eaedb !default;
+$link-color: $primary-color !default;
 $font-color: #222 !default;
 
 // Font Colors

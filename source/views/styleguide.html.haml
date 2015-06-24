@@ -1,0 +1,107 @@
+---
+title: KONTRAST Styleguide
+---
+
+.section
+  .section-content
+    %h2 Sektion für einfachen Text
+
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptatum ipsum amet voluptatibus dicta ut officiis fugit, neque magnam eius, debitis voluptatem molestias autem possimus ipsa repellat! Itaque, quidem, fuga!
+
+    %h3 Überschrift 3
+
+    %h4 Überschrift 4
+
+    %h5 Überschrift 5
+
+.section.center
+  .section-content
+    %h2 Sektion für zentrierten Text
+
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptatum ipsum amet voluptatibus dicta ut officiis fugit, neque magnam eius, debitis voluptatem molestias autem possimus ipsa repellat! Itaque, quidem, fuga!
+
+.section
+  .section-image{style: "background-image: url(#{image_path('apfel.jpg')})"}
+    %h3.image-title
+      Bild Text
+  .section-text
+    %h3 Sektion mit Bild links
+    %p.lead
+      Einfache Sektion mit Bild auf der linken Seite. Wenn das Bild auf der rechten Seite erscheinen soll, dann einfach `image` und `title` vertauschen. Sie nächstes Beispiel.
+
+    = link_to 'Ein Link', '#'
+
+.section
+  .section-text
+    %h3 Sektion mit Bild rechts
+    %p.lead
+      Einfache Sektion mit Bild auf der rechten Seite. Wenn das Bild auf der rechten Seite erscheinen soll, dann einfach `image` und `title` vertauschen. Sie vorheriges Beispiel.
+
+    = link_to 'Ein Link', '#'
+
+  .section-image{style: "background-image: url(#{image_path('apfel.jpg')})"}
+    %h3.image-title
+      Bild Text
+
+
+
+.section.section-collapse
+  .collapse-container
+    .collapse-item
+      .section-image
+        %img{src: image_path('apfel.jpg')}
+        %h3.image-title
+          Karousel
+      .section-text
+        %h3
+          Karousel
+        %h4 Das Content-Karousel
+        %p.lead
+          Einfach ein Element der CSS Class `collapse-item` kopieren, einfügen und abändern. Muss in einem `collapse-container` platziert werden.
+        = link_to 'Ein Link', '#'
+
+    .collapse-item
+      .section-text
+        %h3 Karousel 2
+        %h4 Geht auch mit Bild rechts
+        %p.lead
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quidem, sequi ipsa sunt totam accusantium id, a commodi ab amet, fuga perspiciatis harum soluta aperiam rem tempore.
+        = link_to 'Ein Link', '#'
+
+      .section-image
+        %img{src: image_path('apfel.jpg')}
+        %h3.image-title Karousel 2
+
+    .collapse-item
+      .section-image
+        %img{src: image_path('apfel.jpg')}
+        %h3.image-title
+          Karousel 3
+      .section-text
+        %h3
+          Karousel 3
+        %h4 Und wieder links
+        %p.lead
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quidem, sequi ipsa sunt totam accusantium id, a commodi ab amet, fuga perspiciatis harum soluta aperiam rem tempore.
+        = link_to 'Ein Link', '#'
+
+  .collapse-control
+    %i.fa.fa-chevron-left.fa-inverse.fa-2x.collapse-prev
+    %i.fa.fa-th.fa-inverse.fa-2x.collapse-all
+    %i.fa.fa-chevron-right.fa-inverse.fa-2x.collapse-next
+
+
+.section.section-article
+  .section-content
+    %img{src: 'http://placehold.it/1000x380'}
+    %h2 Artikel Titel
+    %h4 31.12.9999 - Welch Ereignis
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit dolore minus ullam ad neque dignissimos ducimus vero eligendi, minima maiores inventore autem possimus, dolorum nemo numquam, cumque aliquam et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit dolore minus ullam ad neque dignissimos ducimus vero eligendi, minima maiores inventore autem possimus, dolorum nemo numquam, cumque aliquam et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit dolore minus ullam ad neque dignissimos ducimus vero eligendi, minima maiores inventore autem possimus, dolorum nemo numquam, cumque aliquam et.
+
+    %p
+      %img.left{src: 'http://placehold.it/380x200'}
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit dolore minus ullam ad neque dignissimos ducimus vero eligendi, minima maiores inventore autem possimus, dolorum nemo numquam, cumque aliquam et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit dolore minus ullam ad neque dignissimos ducimus vero eligendi, minima maiores inventore autem possimus, dolorum nemo numquam, cumque et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit dolore minus ullam ad neque dignissimos ducimus vero eligendi, minima maiores inventore autem possimus, dolorum nemo numquam, cumque aliquam et.
+
+    %p
+      %img.right{src: 'http://placehold.it/380x200'}
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit dolore minus ullam ad neque dignissimos ducimus vero eligendi, minima maiores inventore autem possimus, dolorum nemo numquam, cumque aliquam et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit dolore minus ullam ad neque dignissimos ducimus vero eligendi, minima maiores inventore autem possimus, dolorum nemo numquam, cumque aliquam et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit dolore minus ullam ad neque dignissimos ducimus vero eligendi, minima maiores inventore autem possimus, dolorum nemo numquam, cumque aliquam et.

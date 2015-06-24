@@ -14,6 +14,12 @@ sprockets.append_path File.join root, 'bower_components'
 sprockets.import_asset 'jquery'
 sprockets.import_asset 'vide'
 sprockets.import_asset 'font-awesome'
+['eot', 'svg', 'ttf', 'woff', 'woff2'].each do |ext|
+  file = ['fontawesome-webfont', ext].join('.')
+  sprockets.import_asset "font-awesome/fonts/#{file}"  do |logical_path|
+    Pathname.new('assets/fonts') + file
+  end
+end
 
 configure :development do
  activate :livereload

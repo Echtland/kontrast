@@ -1,39 +1,149 @@
 ---
-title: Woibbadinga
+title: KONTRAST
 ---
 
-.cover.section-image.full
-  %h1 Woibbadinga
-  %div#bgVideo{:style => "left: 0; width: 100%; height: 100vh; z-index: 0; position: absolute;"}
-  %i.down.fa.fa-chevron-down.fa-5x.animated.infinite.bounce
+#bgVideo.section
+  %h2 Inspiring Culinaric
+  .player
+    .fa.fa-play-circle.fa-4x.play
+
+  .video
+    .fa.fa-times.fa-2x
+    %iframe{:allowfullscreen => "", :frameborder => "0", :height => "570px", :mozallowfullscreen => "", :src => "//player.vimeo.com/video/131519049?api=1&badge=0&byline=0&color=999999&portrait=0&title=0&loop=1", :webkitallowfullscreen => "", :width => "100%"}
 
 
-.intro.section-text
-  .container.center
-    %h1 Des glabst ja gor ned!
+.section.section-collapse
+  .collapse-container
+    .collapse-item
+      .section-image
+        %img{src: image_path('Chefkoch.jpg')}
+        %h3.image-title Chefkoch Inspiration
+      .section-text
+        %h3 Chefkoch Inspiration
+        %h4 Jeden Donnerstag neu!
+        %p.lead
+          Diese Woche: Getrüffeltes Tomatentatartürmchen auf Kohlrabi-Carpaccio mit Petersilienpesto, Kalbspaillard mit Mandarinen und Rucola gefüllt an Kartoffeltalern, Kokos-Gemüseschaumsuppe mit Tempura-Gemüse-Spieß.
+
+        %a{href: 'mailto:hiasinho@me.com'} Gleich reservieren
+
+    .collapse-item
+      .section-image
+        %img{src: image_path('Sommer.jpg')}
+        %h3.image-title
+          Sommer
+          %br/
+          menü
+      .section-text
+        %h3
+          Sommermenü
+        %h4 Frische, leichte Küche
+        %p.lead
+          Passend zur warmen Jahreszeit servieren wir Ihnen ein 4-Gang Menü mit Salaten, Melonen, Sashimi, gegrilltem Seefood und erfrischendem, fruchtigem Eis-Dessert.
+          %br/
+          45,- € pro Person.
+        = link_to 'Mehr Infos', '/menu/surprise.html'
+
+    .collapse-item
+      .section-image
+        %img{src: image_path('Honigwelten.jpg')}
+        %h3.image-title
+          Honig
+          %br/
+          welten
+      .section-text
+        %h3
+          Honigwelten
+        %h4 Honig-Menü
+        %p.lead
+          Nur am 02.05.16
+          %br/
+          Mit Honig lässt sich viel mehr anstellen als nur heiße Milch mit Honig. Wir zaubern für Sie ein Menü rund um die Vielfalt des flüssigen Goldes.
+          79,- € pro Person.
+        %a{href: 'mailto:hiasinho@me.com'} Gleich reservieren
+
+    .collapse-item
+      .section-image
+        %img{src: image_path('Surprise.jpg')}
+        %h3.image-title Surprise
+      .section-text
+        %h3 Surprise
+        %h4 Unser Überaschungsmenü
+        %p.lead
+          Lassen Sie sich von unserer Küchenchefin überraschen. Wählen Sie zwischen 3, 4 oder 5 Gängen - mit und ohne Weinbegleitung. Auf Vorbestellung gerne auch als vegetarische oder vegane Variante!
+          %br/
+          Ab 35,- € pro Person.
+
+        = link_to 'Mehr Infos', '/surprise'
+
+    .collapse-item
+      .section-image
+        %img{src: image_path('Craftbeer.jpg')}
+        %h3.image-title Craftbeer Sensation
+      .section-text
+        %h3 Craftbeer Sensation
+        %h4 Degustationsmenü rund ums Thema Bier
+        %p.lead
+          Nur am 21.09.15
+          %br/
+          Von einer Bier-Sommelière begleitet servieren wir ein 5-Gang Bier-Degustations-Menü inklusive Verkostung von verschiedenen Bieren pro Gang.
+          99,- € pro Person.
+        %a{href: 'mailto:hiasinho@me.com'} Gleich reservieren
+        // reservierund@restaurant-kontrast.de BETREFF Craftbeer Sensation
+
+    .collapse-item
+      .section-image
+        %img{src: image_path('Schoko.jpg')}
+        %h3.image-title World of Chocolate
+      .section-text
+        %h3 World of Chocolate
+        %h4 Schokoladen-Menü
+        %p.lead
+          Nur am 10.10.16
+          %br/
+          Unsere Küchencheffin serviert ein 6-Gang-Menü rund um die ganze Welt der Schokolade. 79,- € pro Person.
+        %a{href: 'mailto:hiasinho@me.com'} Gleich reservieren
+        // reservierund@restaurant-kontrast.de BETREFF Schokoladen-Menü
+
+    .collapse-item
+      .section-image
+        %img{src: image_path('Spirit.jpg')}
+        %h3.image-title Spirit
+      .section-text
+        %h3 Spirit
+        %h4 Edelbrand-Degustations-Menü
+        %p.lead
+          Nur am 07.11.16
+          %br/
+          Begleitet von einem Edelbrand-Sommelier, servieren wir ein
+          6-Gang Menü mit korrespondierenden Edelbränden aus der Region. Edelbrände pro Gang inklusive.
+          99,- € pro Person.
+        %a{href: 'mailto:hiasinho@me.com'} Gleich reservieren
+        // reservierund@restaurant-kontrast.de BETREFF Edelbrand-Degustations-Menü
+
+    .collapse-item
+      .section-image
+        %img{src: image_path('BigDay.jpg')}
+        %h3.image-title
+          Big Day
+      .section-text
+        %h3 Big Day
+        %h4 Unsere Arrangements für Ihren großer Tag
+        %p.lead
+          Geburtstag, Hochzeit- oder Jahrestag. Feiern Sie stilvoll mit einem 5-Gang-Menü.
+          Ihre individuelle Deko, ein exklusiver Geburtagskuchen oder Ihre Lieblingsblumen sind im Preis inbegriffen.
+        %a{href: 'mailto:feiern@restaurant-kontrast.de'} Nähere Informationen, Buchung, Geschenkgutscheine
+
+  .collapse-control
+    %i.fa.fa-chevron-left.fa-inverse.fa-2x.collapse-prev
+    %i.fa.fa-th.fa-inverse.fa-2x.collapse-all
+    %i.fa.fa-chevron-right.fa-inverse.fa-2x.collapse-next
+
+.section
+  .section-image{style: "background-image: url(#{image_path('Gutschein.jpg')})"}
+  .section-text
+    %h3 Gutschein
     %p.lead
-      Bavaria ipsum dolor sit amet glacht gor in da greana Au oans Gstanzl Sauwedda Gstanzl Ramasuri is des liab Deandlgwand? Almrausch Blosmusi Haberertanz Schaung kost nix Enzian iabaroi. Soi a Maß und no a Maß an an Hendl Marei Oachkatzlschwoaf Greichats! Obacht Broadwurschtbudn du dadst ma scho daugn ma Ewig und drei Dog i hob di narrisch gean, is ma Wuascht ma. Eam Brodzeid Schneid soi, do is Sepp Jodler. Nix Vergeltsgott pfenningguat oans, zwoa, gsuffa Engelgwand Schneid. Zidern oa auszutzeln Weibaleid, Marterl nimma. I hab an Breihaus wui unbandig Breihaus guad, des muas ma hoid kenna. A bravs blärrd jo mei is des schee oa hi wos, Engelgwand Servas Schbozal ned. Zidern Griasnoggalsubbm sog i Hetschapfah Reiwadatschi, a Prosit der Gmiadlichkeit wo hi Hemad Maibam nimmds!
+      Schenken Sie einen unvergesslichen Abend.
+      Wir stellen Ihnen einen Gutschein Ihrer Wahl aus.
 
-.orange.section-image.full
-  %h2 Sakrisch guat!
-
-.samples.section-text
-  .container
-    .three.columns
-      .one.center
-        = image_tag 'sample1.jpg'
-        %h4 Lewakaas
-        %p.lead Ned naa i daad Lewakaas hob damischa, des wiad a Mordsgaudi auszutzeln. Obazda is ozapfa Schorsch. Ned woar kummd Hemad in da Bradwurschtsemmal mechad Enzian, schüds nei?
-
-      .two.center
-        = image_tag 'sample2.jpg'
-        %h4 Da Woibbadinga
-        %p.lead Woibbadinga Wiesn Xaver Schbozal gor heitzdog. Griasd eich midnand ja, wo samma denn aasgem, sog i luja ham. Schüds nei naa imma wo hi Prosd Breihaus i hab an is des liab.
-
-      .three.center
-        = image_tag 'sample3.jpg'
-        %h4 As Edlweiss
-        %p.lead Auszutzeln Biagadn wolpern Edlweiss koa do fensdaln Bradwurschtsemmal naa auffi: Graudwiggal Radi nois jo mei is des schee sodala hinter’m Berg san a no Leit do legst di nieda woaß a bissal wos gehd ollaweil Weißwiaschd.
-
-.paprika.section-image.full.dark-content
-  %h2 Do host di gschnittn!
+    = link_to 'Hier Gutschein bestellen', 'mailto:gutschein@restaurant-kontrast.de'
