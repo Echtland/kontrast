@@ -50,6 +50,20 @@ body {
         @include position(absolute, 0);
         background-color: rgba(black, 0.3);
       }
+
+      .image-title {
+        @include media($small-screen-up) {
+          font-size: 4em;
+        }
+
+        @include media($medium-screen-up) {
+          font-size: 4em;
+        }
+
+        @include media($large-screen-up) {
+          font-size: 4em;
+        }
+      }
     }
 
     .section-text {
@@ -72,12 +86,6 @@ body {
         height: 100%;
         min-height: inherit;
       }
-
-      // .section-image {
-      //   &:before {
-      //     display: none;
-      //   }
-      // }
 
       .section-text {
         display: inherit;

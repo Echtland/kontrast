@@ -1,15 +1,11 @@
----
-title: KONTRAST
----
-
-#bgVideo.section
+#bgVideo.section{data: {video: image_path('vb.mp4')}}
   %h2 Inspiring Culinaric
   .player
     .fa.fa-play-circle.fa-4x.play
 
   .video
     .fa.fa-times.fa-2x
-    %iframe{:allowfullscreen => "", :frameborder => "0", :height => "570px", :mozallowfullscreen => "", :src => "//player.vimeo.com/video/131519049?api=1&badge=0&byline=0&color=999999&portrait=0&title=0&loop=1", :webkitallowfullscreen => "", :width => "100%"}
+    %iframe{:allowfullscreen => "", :frameborder => "0", :height => "570px", :mozallowfullscreen => "", :src => "//player.vimeo.com/video/131632189?api=1&badge=0&byline=0&color=999999&portrait=0&title=0&loop=1", :webkitallowfullscreen => "", :width => "100%"}
 
 
 .section.section-collapse
@@ -24,7 +20,7 @@ title: KONTRAST
         %p.lead
           Diese Woche: Getrüffeltes Tomatentatartürmchen auf Kohlrabi-Carpaccio mit Petersilienpesto, Kalbspaillard mit Mandarinen und Rucola gefüllt an Kartoffeltalern, Kokos-Gemüseschaumsuppe mit Tempura-Gemüse-Spieß.
 
-        %a{href: 'mailto:hiasinho@me.com'} Gleich reservieren
+        = booking subject: "Chefkoch Inspiration"
 
     .collapse-item
       .section-image
@@ -41,7 +37,9 @@ title: KONTRAST
           Passend zur warmen Jahreszeit servieren wir Ihnen ein 4-Gang Menü mit Salaten, Melonen, Sashimi, gegrilltem Seefood und erfrischendem, fruchtigem Eis-Dessert.
           %br/
           45,- € pro Person.
-        = link_to 'Mehr Infos', '/menu/surprise.html'
+        = booking subject: "Sommermenü"
+        |
+        = link_to 'Alle Menüs ansehen', '/menues.html'
 
     .collapse-item
       .section-image
@@ -59,7 +57,9 @@ title: KONTRAST
           %br/
           Mit Honig lässt sich viel mehr anstellen als nur heiße Milch mit Honig. Wir zaubern für Sie ein Menü rund um die Vielfalt des flüssigen Goldes.
           79,- € pro Person.
-        %a{href: 'mailto:hiasinho@me.com'} Gleich reservieren
+        = booking subject: "Honigwelten"
+        |
+        = link_to 'Alle Menüs ansehen', '/menues.html'
 
     .collapse-item
       .section-image
@@ -73,7 +73,9 @@ title: KONTRAST
           %br/
           Ab 35,- € pro Person.
 
-        = link_to 'Mehr Infos', '/surprise'
+        = booking subject: "Überaschungsmenü"
+        |
+        = link_to 'Alle Menüs ansehen', '/menues.html'
 
     .collapse-item
       .section-image
@@ -87,8 +89,9 @@ title: KONTRAST
           %br/
           Von einer Bier-Sommelière begleitet servieren wir ein 5-Gang Bier-Degustations-Menü inklusive Verkostung von verschiedenen Bieren pro Gang.
           99,- € pro Person.
-        %a{href: 'mailto:hiasinho@me.com'} Gleich reservieren
-        // reservierund@restaurant-kontrast.de BETREFF Craftbeer Sensation
+        = booking subject: "Craftbeer Sensation"
+        |
+        = link_to 'Alle Menüs ansehen', '/menues.html'
 
     .collapse-item
       .section-image
@@ -101,8 +104,9 @@ title: KONTRAST
           Nur am 10.10.16
           %br/
           Unsere Küchencheffin serviert ein 6-Gang-Menü rund um die ganze Welt der Schokolade. 79,- € pro Person.
-        %a{href: 'mailto:hiasinho@me.com'} Gleich reservieren
-        // reservierund@restaurant-kontrast.de BETREFF Schokoladen-Menü
+        = booking subject: "Schokoladen-Menü"
+        |
+        = link_to 'Alle Menüs ansehen', '/menues.html'
 
     .collapse-item
       .section-image
@@ -117,8 +121,9 @@ title: KONTRAST
           Begleitet von einem Edelbrand-Sommelier, servieren wir ein
           6-Gang Menü mit korrespondierenden Edelbränden aus der Region. Edelbrände pro Gang inklusive.
           99,- € pro Person.
-        %a{href: 'mailto:hiasinho@me.com'} Gleich reservieren
-        // reservierund@restaurant-kontrast.de BETREFF Edelbrand-Degustations-Menü
+        = booking subject: "Edelbrand-Degustations-Menü"
+        |
+        = link_to 'Alle Menüs ansehen', '/menues.html'
 
     .collapse-item
       .section-image
@@ -131,7 +136,7 @@ title: KONTRAST
         %p.lead
           Geburtstag, Hochzeit- oder Jahrestag. Feiern Sie stilvoll mit einem 5-Gang-Menü.
           Ihre individuelle Deko, ein exklusiver Geburtagskuchen oder Ihre Lieblingsblumen sind im Preis inbegriffen.
-        %a{href: 'mailto:feiern@restaurant-kontrast.de'} Nähere Informationen, Buchung, Geschenkgutscheine
+        = link_to 'Nähere Informationen, Buchung, Geschenkgutscheine', 'mailto:reservierung@restaurant-kontrast.de?subject=Reservierung: Big Day', target: :blank
 
   .collapse-control
     %i.fa.fa-chevron-left.fa-inverse.fa-2x.collapse-prev
@@ -139,11 +144,27 @@ title: KONTRAST
     %i.fa.fa-chevron-right.fa-inverse.fa-2x.collapse-next
 
 .section
+  .section-image{style: "background-image: url(#{image_path('Dauerbrenner.jpg')})"}
+    %h3.image-title
+      À la carte Klassiker
+  .section-text
+    %h3 À la carte Klassiker
+    %h4 Unsere Dauerbrenner auf der Speisekarte
+    %p.lead
+      Ob unser Mango-Kokos-Cappuccino,
+      das exquisite Rinderfilet von der Färse, unsere Maispoularde,
+      Wels in rotem Curry oder unsere legendäre Schokoladenvariation als Dessert,
+      diese und noch viel mehr Gerichte finden Sie bei uns immer auf der Karte.
+
+    = link_to 'Alle Klassiker auf der Speisekarte', '/alacarte.html'
+
+.section
   .section-image{style: "background-image: url(#{image_path('Gutschein.jpg')})"}
   .section-text
     %h3 Gutschein
+    %h4 Die geschmackvolle Geschenkidee
     %p.lead
       Schenken Sie einen unvergesslichen Abend.
       Wir stellen Ihnen einen Gutschein Ihrer Wahl aus.
 
-    = link_to 'Hier Gutschein bestellen', 'mailto:gutschein@restaurant-kontrast.de'
+    = link_to 'Hier Gutschein bestellen', 'mailto:gutschein@restaurant-kontrast.de?subject=Gutschein bestellen', target: :blank

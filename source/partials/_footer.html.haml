@@ -9,7 +9,7 @@
     %p
       Restaurant: Werkstraße 5 &middot; 85298 Mitterscheyern/Pfaffenhofen
 
-    = link_to 'Der Weg zu uns', 'http://www.hiasinho.com'
+    = link_to 'Der Weg zu uns', 'https://goo.gl/maps/eD1M6', target: :blank
 
   .footer-right
     %h3 Reservierung
@@ -18,7 +18,7 @@
     %p
       Telefon: 08441 2788810
 
-    = link_to 'Reservieren', 'http://www.hiasinho.com'
+    = link_to 'Reservieren', 'mailto:reservierung@restaurant-kontrast.de?subject=Reservierung', target: :blank
 
   .footer-bottom
     %p
@@ -28,9 +28,8 @@
 
       %br/
       &copy;
-      = link_to 'KONTRAST', '/'
+      = root_url 'KONTRAST'
       &middot;
       = link_to 'Impressum', '/impressum.html'
       &middot;
       = link_to 'Datenschutz', '/datenschutz.html'
-      &middot;

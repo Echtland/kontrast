@@ -8,6 +8,10 @@
 
 .section-content {
   @include pad($base-padding);
+
+  @include media($medium-screen-up) {
+    @include pad($base-padding ($base-padding * 3));
+  }
 }
 
 .section-image, .section-text {
