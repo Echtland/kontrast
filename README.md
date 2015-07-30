@@ -7,3 +7,6 @@
 - Seitentitel, Keyword etc.: data - Verzeichnis
 - Seiten ändern: source/views
 - Seite hochladen: rake deploy:production
+
+
+Basis: https://middlemanapp.com/
